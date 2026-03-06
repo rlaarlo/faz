@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAZ Cyberautics Solutions — Solusi Teknologi & Keamanan Siber</title>
+    <meta name="description"
+        content="FAZ Cyberautics Solutions menyediakan layanan solusi teknologi informasi, pengembangan software, dan keamanan siber terpadu untuk bisnis Anda." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">FAZ</span>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="/logo-white.png" alt="FAZ Cyberautics Solutions" />
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#services" class="nav-link">Layanan</a>
+                <a href="#ai" class="nav-link">AI Solutions</a>
+                <a href="#team" class="nav-link">Tim</a>
+                <a href="#partners" class="nav-link">Partner</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-cta">Hubungi Kami</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="/logo-white.png" alt="FAZ" class="mobile-logo" />
+            <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#hero" class="mobile-link">Beranda</a>
+            <a href="#about" class="mobile-link">Tentang Kami</a>
+            <a href="#services" class="mobile-link">Layanan</a>
+            <a href="#ai" class="mobile-link">AI Solutions</a>
+            <a href="#team" class="mobile-link">Tim Kami</a>
+            <a href="#partners" class="mobile-link">Partner</a>
+            <a href="#contact" class="mobile-link">Kontak</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary mobile-cta">Mulai Sekarang</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+            <div class="hero-bg-grid"></div>
+            <div class="hero-gradient-orb hero-orb-1"></div>
+            <div class="hero-gradient-orb hero-orb-2"></div>
+            <div class="hero-gradient-orb hero-orb-3"></div>
+            <div class="container hero-container">
+                <div class="hero-badge" data-aos="fade-down">
+                    <span class="badge-dot"></span>
+                    <i class="fas fa-robot" style="font-size: 0.85rem;"></i>
+                    AI-Powered Digital Transformation
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Solusi <span class="gradient-text">AI</span>,
+                    <span class="gradient-text">Teknologi</span> &
+                    <span class="gradient-text">Keamanan Siber</span>
+                    untuk Bisnis Anda
+                </h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    Kami memanfaatkan kekuatan Artificial Intelligence dan teknologi mutakhir untuk merancang solusi IT
+                    yang cerdas, responsif, dan siap membawa bisnis Anda ke level berikutnya.
+                </p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#services" class="btn btn-primary btn-lg">
+                        <span>Jelajahi Layanan</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-ghost btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Pelajari Lebih Lanjut</span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="354">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Proyek Selesai</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="321">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Klien Terlayani</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="99">0</span><span class="stat-plus">%</span>
+                        <span class="stat-label">Kepuasan Klien</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Model AI Deployed</span>
+                    </div>
+                </div>
+                <!-- AI Typing Indicator -->
+                <div class="ai-typing-indicator" data-aos="fade-up" data-aos-delay="500">
+                    <div class="ai-typing-icon"><i class="fas fa-brain"></i></div>
+                    <span id="aiTypingText" class="ai-typing-text"></span>
+                    <span class="ai-cursor">|</span>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Tentang Kami</span>
+                    <h2 class="section-title">Layanan Desain, Manajemen & Dukungan IT yang <span
+                            class="gradient-text">Tepat Sasaran</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content" data-aos="fade-right">
+                        <p class="about-text-main">
+                            <strong>FAZ Cyberautics Solutions</strong> membantu perusahaan mempercepat inovasi dengan
+                            dukungan tim teknologi berpengalaman. Kami menyediakan solusi pengembangan perangkat lunak,
+                            infrastruktur, dan keamanan siber yang disesuaikan dengan kebutuhan bisnis Anda.
+                        </p>
+                        <p class="about-text-secondary">
+                            Kami percaya transformasi digital bukan hanya soal tools, tetapi juga cara kerja. Karena itu
+                            kami mendampingi Anda dari perencanaan, implementasi, hingga optimalisasi berkelanjutan.
+                        </p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Mengutamakan kualitas dan ketepatan solusi teknis</span>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Hadir dengan ide dan semangat baru untuk pertumbuhan bisnis</span>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Menjadi konsultan, pendamping, dan partner teknologi Anda</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Hubungi Kami</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="about-contact-info">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <small>Hubungi untuk konsultasi</small>
+                                    <strong>08383-117-7060</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual" data-aos="fade-left">
+                        <div class="about-card-stack">
+                            <div class="about-metric-card card-1">
+                                <div class="metric-icon"><i class="fas fa-shield-halved"></i></div>
+                                <div class="metric-info">
+                                    <span class="metric-value">95%</span>
+                                    <span class="metric-label">Keamanan Data</span>
+                                </div>
+                            </div>
+                            <div class="about-metric-card card-2">
+                                <div class="metric-icon"><i class="fas fa-server"></i></div>
+                                <div class="metric-info">
+                                    <span class="metric-value">80%</span>
+                                    <span class="metric-label">Manajemen IT</span>
+                                </div>
+                            </div>
+                            <div class="about-metric-card card-3">
+                                <div class="metric-icon"><i class="fas fa-microchip"></i></div>
+                                <div class="metric-info">
+                                    <span class="metric-value">80%</span>
+                                    <span class="metric-label">Teknologi Informasi</span>
+                                </div>
+                            </div>
+                            <div class="about-glow-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section">
+            <div class="services-bg-pattern"></div>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Layanan Kami</span>
+                    <h2 class="section-title">Solusi Digital Lengkap untuk <span class="gradient-text">Pertumbuhan
+                            Bisnis</span> Anda</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Software Development</h3>
+                        <p class="service-desc">Pengembangan aplikasi custom yang sesuai kebutuhan unik bisnis dan
+                            proses kerja Anda.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3 class="service-title">Keamanan IT</h3>
+                        <p class="service-desc">Perlindungan menyeluruh untuk data dan sistem dari ancaman cyber dengan
+                            solusi keamanan terkini.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Solutions</h3>
+                        <p class="service-desc">Migrasi dan manajemen infrastruktur cloud untuk skalabilitas dan
+                            efisiensi operasional.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="service-title">Konsultan IT</h3>
+                        <p class="service-desc">Solusi strategis untuk mengoptimalkan investasi teknologi dan
+                            transformasi digital bisnis.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="service-title">Infrastruktur IT</h3>
+                        <p class="service-desc">Perancangan dan implementasi infrastruktur IT handal untuk mendukung
+                            pertumbuhan bisnis.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="service-title">Manajemen Data</h3>
+                        <p class="service-desc">Kelola dan optimalkan data bisnis Anda untuk pengambilan keputusan yang
+                            lebih akurat.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="service-title">IT Support & Maintenance</h3>
+                        <p class="service-desc">Dukungan teknis 24/7 dan maintenance rutin agar sistem selalu berjalan
+                            optimal.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="service-title">DevOps Solutions</h3>
+                        <p class="service-desc">Otomasi dan integrasi berkelanjutan untuk mempercepat delivery dan
+                            kualitas software.</p>
+                        <div class="service-link">
+                            <span>Pelajari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Solutions Section -->
+        <section id="ai" class="ai-section section">
+            <div class="ai-bg-particles" id="aiParticles"></div>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-brain"></i> AI Solutions</span>
+                    <h2 class="section-title">Tingkatkan Bisnis dengan <span class="gradient-text">Kecerdasan
+                            Buatan</span></h2>
+                    <p class="section-subtitle">Kami mengintegrasikan teknologi AI terdepan ke dalam solusi bisnis Anda
+                        untuk automasi, analitik prediktif, dan pengambilan keputusan yang lebih cerdas.</p>
+                </div>
+
+                <div class="ai-features-grid">
+                    <div class="ai-feature-card ai-feature-large" data-aos="fade-up" data-aos-delay="0">
+                        <div class="ai-feature-visual">
+                            <div class="ai-brain-animation">
+                                <div class="brain-node" style="--i:0;"></div>
+                                <div class="brain-node" style="--i:1;"></div>
+                                <div class="brain-node" style="--i:2;"></div>
+                                <div class="brain-node" style="--i:3;"></div>
+                                <div class="brain-node" style="--i:4;"></div>
+                                <div class="brain-node" style="--i:5;"></div>
+                                <div class="brain-center"><i class="fas fa-brain"></i></div>
+                            </div>
+                        </div>
+                        <div class="ai-feature-content">
+                            <div class="ai-label">Machine Learning</div>
+                            <h3>Prediksi & Automasi Cerdas</h3>
+                            <p>Model machine learning yang dilatih khusus untuk bisnis Anda — dari prediksi penjualan,
+                                deteksi anomali, hingga rekomendasi produk otomatis.</p>
+                            <ul class="ai-checklist">
+                                <li><i class="fas fa-sparkles"></i> Predictive Analytics</li>
+                                <li><i class="fas fa-sparkles"></i> Anomaly Detection</li>
+                                <li><i class="fas fa-sparkles"></i> Recommendation Engine</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ai-feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="ai-feature-icon"><i class="fas fa-comments"></i></div>
+                        <div class="ai-label">NLP & Chatbot</div>
+                        <h3>AI Chatbot & Asisten Virtual</h3>
+                        <p>Chatbot cerdas yang memahami bahasa natural untuk customer service 24/7, automasi FAQ, dan
+                            lead generation.</p>
+                        <div class="ai-chat-demo">
+                            <div class="ai-chat-bubble ai-chat-user">Berapa harga layanan cloud?</div>
+                            <div class="ai-chat-bubble ai-chat-bot">
+                                <i class="fas fa-robot"></i>
+                                Untuk layanan cloud, kami menawarkan paket mulai dari Rp 2.5jt/bulan. Mau saya bantu
+                                pilih paket yang sesuai?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ai-feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ai-feature-icon"><i class="fas fa-eye"></i></div>
+                        <div class="ai-label">Computer Vision</div>
+                        <h3>Pengenalan Visual & OCR</h3>
+                        <p>Teknologi computer vision untuk quality control otomatis, pengenalan dokumen (OCR), dan
+                            analisis gambar real-time.</p>
+                        <div class="ai-vision-demo">
+                            <div class="vision-scan-line"></div>
+                            <div class="vision-grid">
+                                <div class="vision-cell active"></div>
+                                <div class="vision-cell"></div>
+                                <div class="vision-cell active"></div>
+                                <div class="vision-cell"></div>
+                                <div class="vision-cell active"></div>
+                                <div class="vision-cell"></div>
+                                <div class="vision-cell"></div>
+                                <div class="vision-cell active"></div>
+                                <div class="vision-cell"></div>
+                            </div>
+                            <span class="vision-label">Analyzing... 97.8% accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Process Flow -->
+                <div class="ai-process" data-aos="fade-up">
+                    <div class="ai-process-step">
+                        <div class="ai-process-icon"><i class="fas fa-database"></i></div>
+                        <span>Data Collection</span>
+                    </div>
+                    <div class="ai-process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="ai-process-step">
+                        <div class="ai-process-icon"><i class="fas fa-gears"></i></div>
+                        <span>Model Training</span>
+                    </div>
+                    <div class="ai-process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="ai-process-step">
+                        <div class="ai-process-icon"><i class="fas fa-vial"></i></div>
+                        <span>Testing & Validation</span>
+                    </div>
+                    <div class="ai-process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="ai-process-step">
+                        <div class="ai-process-icon"><i class="fas fa-rocket"></i></div>
+                        <span>Deployment</span>
+                    </div>
+                    <div class="ai-process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="ai-process-step">
+                        <div class="ai-process-icon"><i class="fas fa-chart-line"></i></div>
+                        <span>Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner section">
+            <div class="container">
+                <div class="cta-card" data-aos="zoom-in">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ketika strategi dan teknologi sejalan, setiap usaha kecil dapat membawa
+                            perubahan besar.</h2>
+                        <p class="cta-desc">Berhenti membuang waktu dan biaya pada solusi digital yang tidak tepat. Mari
+                            diskusikan kebutuhan Anda bersama kami.</p>
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <span>Diskusikan Kebutuhan Anda</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Tim Kami</span>
+                    <h2 class="section-title">Bersama Menciptakan <span class="gradient-text">Solusi Terbaik</span></h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="team-img-wrap">
+                            <img src="/images/team/team-1.jpg" alt="Arga K" loading="lazy" />
+                            <div class="team-social-overlay">
+                                <a href="https://linkedin.com/in/arga-kurniawan-kma" target="_blank" rel="noopener"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/argakancah/" target="_blank" rel="noopener"
+                                    aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Arga K</h3>
+                            <span class="team-role">CEO</span>
+                        </div>
+                    </div>
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-img-wrap">
+                            <img src="/images/team/team-2.jpg" alt="Fajar D M" loading="lazy" />
+                            <div class="team-social-overlay">
+                                <a href="https://www.linkedin.com/in/fajar-dwi-mawan/" target="_blank" rel="noopener"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/fajar.mawan/" target="_blank" rel="noopener"
+                                    aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Fajar D M</h3>
+                            <span class="team-role">CTO</span>
+                        </div>
+                    </div>
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-img-wrap">
+                            <img src="/images/team/team-3.jpg" alt="M Zamzam I" loading="lazy" />
+                            <div class="team-social-overlay"></div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">M Zamzam I</h3>
+                            <span class="team-role">Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="partners-section section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Partner Teknologi</span>
+                    <h2 class="section-title">Didukung Ekosistem <span class="gradient-text">Cloud & DevOps</span>
+                        Terbaik</h2>
+                </div>
+                <div class="partners-marquee" data-aos="fade-up" data-aos-delay="100">
+                    <div class="marquee-track">
+                        <div class="marquee-content">
+                            <div class="partner-logo"><img src="/images/cloud/amazon.svg" alt="AWS" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/azure.svg" alt="Azure" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/gcloud.svg" alt="Google Cloud" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/firebase.svg" alt="Firebase" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/heroku.svg" alt="Heroku" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/docker.svg" alt="Docker" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/terraform.png" alt="Terraform" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/github.svg" alt="GitHub" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/gitlab.svg" alt="GitLab" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/bitbucket.svg" alt="Bitbucket" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/ansible.svg" alt="Ansible" /></div>
+                        </div>
+                        <div class="marquee-content" aria-hidden="true">
+                            <div class="partner-logo"><img src="/images/cloud/amazon.svg" alt="AWS" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/azure.svg" alt="Azure" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/gcloud.svg" alt="Google Cloud" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/firebase.svg" alt="Firebase" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/heroku.svg" alt="Heroku" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/docker.svg" alt="Docker" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/terraform.png" alt="Terraform" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/github.svg" alt="GitHub" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/gitlab.svg" alt="GitLab" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/bitbucket.svg" alt="Bitbucket" /></div>
+                            <div class="partner-logo"><img src="/images/cloud/ansible.svg" alt="Ansible" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Kontak Kami</span>
+                    <h2 class="section-title">Mari <span class="gradient-text">Berdiskusi</span> Tentang Kebutuhan Anda
+                    </h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-cards" data-aos="fade-right">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h4>Telepon</h4>
+                                <p>+62 838 311 77 060</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h4>Email</h4>
+                                <p>cyberautics@faz.my.id</p>
+                                <p>support@faz.my.id</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h4>Alamat</h4>
+                                <p>Jl MT Haryono, Grogol, Sukoharjo</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="contactName" placeholder="Nama Anda" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="contactWhatsapp"
+                                        placeholder="Nomor WhatsApp (cth: 08123456789)" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contactSubject" placeholder="Subjek" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contactMessage" rows="5" placeholder="Tulis pesan Anda..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-full" id="contactSubmit">
+                                <span>Kirim via WhatsApp</span>
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="contact-map" data-aos="fade-up">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Jl%20MT%20Haryono%20Grogol%20Sukoharjo&t=m&z=14&output=embed&iwloc=near"
+                        title="Lokasi FAZ Cyberautics Solutions" loading="lazy" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="/logo-white.png" alt="FAZ Cyberautics Solutions" class="footer-logo" />
+                    <p>Percepat inovasi bisnis Anda bersama tim IT berpengalaman. Kami menghadirkan solusi dan dukungan
+                        teknologi yang dapat diandalkan.</p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Tautan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Tentang Perusahaan</a></li>
+                        <li><a href="#services">Layanan Kami</a></li>
+                        <li><a href="#team">Tim Kami</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Keamanan Data</a></li>
+                        <li><a href="#">Software Developer</a></li>
+                        <li><a href="#">IT Consultant</a></li>
+                        <li><a href="#">Jaringan & Infrastruktur</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Kontak</h4>
+                    <ul class="footer-links footer-contact-links">
+                        <li><i class="fas fa-phone"></i> +62 838 311 77 060</li>
+                        <li><i class="fas fa-envelope"></i> cyberautics@faz.my.id</li>
+                        <li><i class="fas fa-location-dot"></i> Jl MT Haryono, Grogol, Sukoharjo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FAZ Cyberautics Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

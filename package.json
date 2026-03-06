@@ -1,0 +1,16 @@
+{
+  "name": "faz-cyberautics",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "bun --env-file=.env server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "bun run build && bun --env-file=.env server.js"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
