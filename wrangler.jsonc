@@ -1,0 +1,13 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "fazweb",
+    "compatibility_date": "2025-09-27",
+    "compatibility_flags": ["nodejs_compat"],
+    "main": "src/worker.js",
+    "assets": {
+        "not_found_handling": "single-page-application"
+    },
+    "observability": {
+        "enabled": true
+    }
+}
