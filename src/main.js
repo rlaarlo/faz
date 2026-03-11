@@ -402,14 +402,14 @@ function initAITyping() {
   if (!typingEl) return;
 
   const phrases = [
-    'Menganalisis kebutuhan bisnis Anda...',
-    'Merancang arsitektur AI yang optimal...',
-    'Training model machine learning...',
-    'Mengoptimalkan performa sistem...',
-    'Memproses data dengan neural network...',
-    'Automasi proses bisnis dengan AI...',
-    'Mendeteksi anomali secara real-time...',
-    'Menghasilkan insight dari big data...',
+    'Mempersiapkan siswa menghadapi ANBK...',
+    'Menganalisis performa belajar siswa...',
+    'Menyiapkan simulasi UTBK untuk SMA...',
+    'Mengolah data assessment secara real-time...',
+    'Pemetaan minat & bakat siswa Indonesia...',
+    'Skalabilitas cloud untuk ribuan siswa...',
+    'Membangun masa depan pendidikan digital...',
+    'Platform CBT terpercaya untuk sekolah...',
   ];
 
   let phraseIndex = 0;
